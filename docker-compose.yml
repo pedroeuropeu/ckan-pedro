@@ -11,7 +11,7 @@ services:
   dvpt:
    image: pedroeuropeu/ckan-latest
    container_name: ckan_pedro
-   network_mode: "host"
+   network_mode: "bridge"
    ports:
      - "5000:5000"
    tty: true
