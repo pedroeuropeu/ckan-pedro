@@ -47,3 +47,7 @@ OU
 docker-compose up
 
 Ckan estará rodando em http://192.168.56.1:5000/
+
+depois, basta criar um usuario admin dentro do container.
+
+ckan -c /ckan/ckan_venv/src/ckan/ckan.ini sysadmin add admin
