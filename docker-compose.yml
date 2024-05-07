@@ -1,0 +1,27 @@
+version: '2'
+volumes:
+  ckan_storage:
+  pg_data:
+  solr_data:
+  pip_cache:
+  site_packages:
+  vscode_server:
+
+services:
+  dvpt:
+   image: pedroeuropeu/ckan-latest
+   container_name: ckan_pedro
+   network_mode: "host"
+   ports:
+     - "5000:5000"
+   tty: true
+
+  datapusher:
+    image: ckan/ckan-base-datapusher:${DATAPUSHER_VERSION}
+    restart: unless-stopped
+
+#  redis:
+#    image: redis
+#    ports: ["6379"]
+#    container_name: ckan-redis
+#    restart: unless-stopped

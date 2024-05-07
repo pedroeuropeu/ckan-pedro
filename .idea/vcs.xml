@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ckan_venv/src/ckan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ckan_venv/src/ckanext-geoview" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ckan_venv/src/ckanext-scheming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ckan_venv/src/ckanext-spatial" vcs="Git" />
+  </component>
+</project>
