@@ -7,6 +7,10 @@ docker run --name ckan-solr -p 8983:8983 -d ckan/ckan-solr:2.9-solr8
 
 Precisa-se criar um banco de dados postgres e alterar os seguintes arquivos com as variaveis e ip necessarios:
 
+CREATE USER ckan WITH PASSWORD 'ckan';
+CREATE DATABASE ckan OWNER ckan;
+
+
 .env
     -  
         POSTGRES_USER=ckan
